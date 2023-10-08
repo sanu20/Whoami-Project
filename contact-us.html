@@ -39,12 +39,23 @@
 
 </head>
 <body class="host_version"> 
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+	
 	<!-- Start header -->
 	<header class="top-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="index.html">
-					<img src="" alt="" />
+				<a class="navbar-brand" href="index.html" >
+					<img src="./images/who-logo.webp" alt=""  style="width: 150px;height: 100px;"/>
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="icon-bar"></span>
@@ -53,85 +64,89 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbars-host">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Domain Lookup </a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item " href="single-domain-lookup.html">Single Domain Lookup </a>
+								<a class="dropdown-item" href="single-domain-lookup.html">Single Domain Lookup </a>
 								<a class="dropdown-item" href="multiple-domain-lookup.html">Multiple Domain Lookup</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">SSL Certificate Check </a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item " href="ssl-certificate-lookup.html">Single Domain </a>
-								<a class="dropdown-item active" href="multiple-domain.html">Multiple Domain </a>
+								<a class="dropdown-item" href="ssl-certificate-lookup.html">Single Domain </a>
+								<a class="dropdown-item" href="multiple-domain.html">Multiple Domain </a>
 							</div>
 						</li>
                         <li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Email Analysis</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
 								<a class="dropdown-item" href="analysis-email-header.html">Analyze Email Header </a>
-								<a class="dropdown-item" href="email-blacklists.html">Email Blacklists </a>
+								<a class="dropdown-item" href="multiple-domain.html">Email Blacklists </a>
 							</div>
 						</li>
                         <li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">VirusTotal</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="search-file-hashes.html">Search File Hashes </a>
-								<a class="dropdown-item" href="scan-urls.html">Scan URLs</a>
-                                <a class="dropdown-item" href="scan-a-file.html">Scan a file</a>
+								<a class="dropdown-item" href="single-domain.html">Search File Hashes </a>
+								<a class="dropdown-item" href="multiple-domain.html">Scan URLs</a>
+                                <a class="dropdown-item" href="multiple-domain.html">Scan a file</a>
 							</div>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="troubleshooting.html">Network Troubleshooting</a></li>
+                        <li class="nav-item"><a class="nav-link" href="troubleshooting.html">Network Troubleshooting</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
-	<!-- End header --><div id="domain" class="section wb">
-        <div class="container">
-            <div class="row text-center">
+	<!-- End header -->
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>Contact<span class="m_1">Lorem Ipsum dolroin gravida nibh vel velit.</span></h1>
+		</div>
+	</div>
+	
+    <div id="support" class="section wb">
+        <div class="container-fulid">
+            <div class="section-title text-center">
+                <h3>Need Help? Sure we are Online!</h3>
+                <p class="lead">Let us give you more details about the special offer website you want us. Please fill out the form below. <br>We have million of website owners who happy to work with us!</p>
+            </div><!-- end title -->
 
-                <div class="col-lg-12">
-                    <form class="checkdomain form-inline">
-                        <div class="checkdomain-wrapper">
-                            <h2><strong>Multiple SSL Certificate Lookup</strong> </h2>
-                            <div class="form-group">
-                                <label class="sr-only" for="domainnamehere">Domain name</label>
-                                <input type="text" class="form-control" id="domainnamehere" placeholder="Enter domain name here..">
-                                <button type="submit" class="btn btn-primary grd1"><i class="fa fa-search"></i></button>
-                            </div>
-                            <p>space separated domain names e.g. wikipedia.org example.com facebook.com </p>
-                            <h2><strong>Enter a domain name in the above searchbox to obtain domain information</strong> </h2>
-                            <hr>
-                            <div class="clearfix"></div>
-                            <div class="checkbox checkbox-warning">
-                                <input id="domaincom" type="checkbox" class="styled" checked>
-                                <label for="domaincom">.com</label>
-                            </div>
-                            <div class="checkbox checkbox-warning">
-                                <input id="domainnet" type="checkbox" class="styled" checked>
-                                <label for="domainnet">.net</label>
-                            </div>
-                            <div class="checkbox checkbox-warning">
-                                <input id="domainorg" type="checkbox" class="styled">
-                                <label for="domainorg">.org</label>
-                            </div>
-                            <div class="checkbox checkbox-warning">
-                                <input id="domaintv" type="checkbox" class="styled">
-                                <label for="domaintv">.tv</label>
-                            </div>
-                            <div class="checkbox checkbox-warning">
-                                <input id="domaininfo" type="checkbox" class="styled">
-                                <label for="domaininfo">.info</label>
-                            </div>
-                        </div><!-- end checkdomain-wrapper -->
-                    </form>
-                </div>
-				
-				
-                <!-- end col -->
+            <div class="row">
+                <div class="col-xl-6 col-md-12 col-sm-12">
+                    <div class="contact_form">
+                        <div id="message"></div>
+                        <form id="contactform" class="" action="contact.php" name="contactform" method="post">
+                            <fieldset class="row row-fluid">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last Name">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone">
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Give us more details.."></textarea>
+                                </div>
+                                <div class="text-center pd">
+                                    <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Send Request</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div><!-- end col -->
+				<div class="col-xl-6 col-md-12 col-sm-12">
+					<div class="map-box">
+						<div id="custom-places" class="small-map"></div>
+					</div>
+				</div>
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->

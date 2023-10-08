@@ -65,7 +65,7 @@
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">SSL Certificate Check </a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
 								<a class="dropdown-item " href="ssl-certificate-lookup.html">Single Domain </a>
-								<a class="dropdown-item active" href="multiple-domain.html">Multiple Domain </a>
+								<a class="dropdown-item " href="multiple-domain.html">Multiple Domain </a>
 							</div>
 						</li>
                         <li class="nav-item dropdown">
@@ -79,7 +79,7 @@
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">VirusTotal</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
 								<a class="dropdown-item" href="search-file-hashes.html">Search File Hashes </a>
-								<a class="dropdown-item" href="scan-urls.html">Scan URLs</a>
+								<a class="dropdown-item active" href="scan-urls.html">Scan URLs</a>
                                 <a class="dropdown-item" href="scan-a-file.html">Scan a file</a>
 							</div>
 						</li>
@@ -89,54 +89,55 @@
 			</div>
 		</nav>
 	</header>
-	<!-- End header --><div id="domain" class="section wb">
+	<!-- End header -->
+    <div id="overviews" class="section lb">
         <div class="container">
-            <div class="row text-center">
-
-                <div class="col-lg-12">
-                    <form class="checkdomain form-inline">
-                        <div class="checkdomain-wrapper">
-                            <h2><strong>Multiple SSL Certificate Lookup</strong> </h2>
-                            <div class="form-group">
-                                <label class="sr-only" for="domainnamehere">Domain name</label>
-                                <input type="text" class="form-control" id="domainnamehere" placeholder="Enter domain name here..">
-                                <button type="submit" class="btn btn-primary grd1"><i class="fa fa-search"></i></button>
-                            </div>
-                            <p>space separated domain names e.g. wikipedia.org example.com facebook.com </p>
-                            <h2><strong>Enter a domain name in the above searchbox to obtain domain information</strong> </h2>
-                            <hr>
-                            <div class="clearfix"></div>
-                            <div class="checkbox checkbox-warning">
-                                <input id="domaincom" type="checkbox" class="styled" checked>
-                                <label for="domaincom">.com</label>
-                            </div>
-                            <div class="checkbox checkbox-warning">
-                                <input id="domainnet" type="checkbox" class="styled" checked>
-                                <label for="domainnet">.net</label>
-                            </div>
-                            <div class="checkbox checkbox-warning">
-                                <input id="domainorg" type="checkbox" class="styled">
-                                <label for="domainorg">.org</label>
-                            </div>
-                            <div class="checkbox checkbox-warning">
-                                <input id="domaintv" type="checkbox" class="styled">
-                                <label for="domaintv">.tv</label>
-                            </div>
-                            <div class="checkbox checkbox-warning">
-                                <input id="domaininfo" type="checkbox" class="styled">
-                                <label for="domaininfo">.info</label>
-                            </div>
-                        </div><!-- end checkdomain-wrapper -->
-                    </form>
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>URL Search On VirusTotal</h3>
+                    <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p>
                 </div>
-				
-				
-                <!-- end col -->
+            </div><!-- end title -->
+
+            <hr class="invis"> 
+
+            <div class="row"> 
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <form class="checkdomain form-inline">
+                            <div class="checkdomain-wrapper">
+                        <div class="form-group">
+                            <label class="sr-only" for="domainnamehere">Domain name</label>
+                            <input type="text" class="form-control" id="domainnamehere" placeholder="Enter an IP, Domain or URL : ">
+                            <button type="submit" class="btn btn-primary grd1">Search</button>
+                        </div>
+                        </div>
+                        <p><strong>example:</strong> wikipedia.org <br> 103.102.166.224 <br> https://example.com/files/3x2aant.7z</p>
+                        </form>
+                    </div><!-- end icon-wrapper -->
+                </div><!-- end col -->
+
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s" >
+                        <h3>Select a CSV file with multiple urls: </h3>
+                        <form class="checkdomain form-inline">
+                            <div class="checkdomain-wrapper">
+                                <input type="file" id="inputfile" name="inputfile" accept=".csv" required=""><br><br>
+                            <button type="submit" class="btn btn-primary grd1">Upload</button>
+                        </div>
+                        <p><strong>File must contain each URL (or IP or domain) on a separate line e.g.</strong></p>
+                        <p>wikipedia.org</p>
+                        <p>113.24.112.43</p>
+                        <p>5http://example.com/files/c8e834bb.zip</p>
+                        </form>
+                    </div><!-- end icon-wrapper -->
+                </div><!-- end col -->
+
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
 
-	<footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-xs-12">

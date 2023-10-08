@@ -65,7 +65,7 @@
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">SSL Certificate Check </a>
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
 								<a class="dropdown-item " href="ssl-certificate-lookup.html">Single Domain </a>
-								<a class="dropdown-item active" href="multiple-domain.html">Multiple Domain </a>
+								<a class="dropdown-item " href="multiple-domain.html">Multiple Domain </a>
 							</div>
 						</li>
                         <li class="nav-item dropdown">
@@ -80,7 +80,7 @@
 							<div class="dropdown-menu" aria-labelledby="dropdown-a">
 								<a class="dropdown-item" href="search-file-hashes.html">Search File Hashes </a>
 								<a class="dropdown-item" href="scan-urls.html">Scan URLs</a>
-                                <a class="dropdown-item" href="scan-a-file.html">Scan a file</a>
+                                <a class="dropdown-item active" href="scan-a-file.html">Scan a file</a>
 							</div>
 						</li>
 						<li class="nav-item"><a class="nav-link" href="troubleshooting.html">Network Troubleshooting</a></li>
@@ -89,54 +89,35 @@
 			</div>
 		</nav>
 	</header>
-	<!-- End header --><div id="domain" class="section wb">
+	<!-- End header -->
+    <div id="overviews" class="section lb">
         <div class="container">
-            <div class="row text-center">
 
-                <div class="col-lg-12">
-                    <form class="checkdomain form-inline">
-                        <div class="checkdomain-wrapper">
-                            <h2><strong>Multiple SSL Certificate Lookup</strong> </h2>
-                            <div class="form-group">
-                                <label class="sr-only" for="domainnamehere">Domain name</label>
-                                <input type="text" class="form-control" id="domainnamehere" placeholder="Enter domain name here..">
-                                <button type="submit" class="btn btn-primary grd1"><i class="fa fa-search"></i></button>
-                            </div>
-                            <p>space separated domain names e.g. wikipedia.org example.com facebook.com </p>
-                            <h2><strong>Enter a domain name in the above searchbox to obtain domain information</strong> </h2>
-                            <hr>
-                            <div class="clearfix"></div>
-                            <div class="checkbox checkbox-warning">
-                                <input id="domaincom" type="checkbox" class="styled" checked>
-                                <label for="domaincom">.com</label>
-                            </div>
-                            <div class="checkbox checkbox-warning">
-                                <input id="domainnet" type="checkbox" class="styled" checked>
-                                <label for="domainnet">.net</label>
-                            </div>
-                            <div class="checkbox checkbox-warning">
-                                <input id="domainorg" type="checkbox" class="styled">
-                                <label for="domainorg">.org</label>
-                            </div>
-                            <div class="checkbox checkbox-warning">
-                                <input id="domaintv" type="checkbox" class="styled">
-                                <label for="domaintv">.tv</label>
-                            </div>
-                            <div class="checkbox checkbox-warning">
-                                <input id="domaininfo" type="checkbox" class="styled">
-                                <label for="domaininfo">.info</label>
-                            </div>
-                        </div><!-- end checkdomain-wrapper -->
-                    </form>
-                </div>
-				
-				
-                <!-- end col -->
+            <hr class="invis"> 
+
+            <div class="row"> 
+
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s" >
+                        <h3>Upload a suspicious file</h3>
+                        <form class="checkdomain form-inline">
+                            <div class="checkdomain-wrapper">
+                                <input type="file" id="inputfile" name="inputfile" accept=".csv" required=""><br><br>
+                            <button type="submit" class="btn btn-primary grd1">Upload</button>
+                        </div>
+                        <p><strong>File must contain each hash on a separate line e.g.</strong></p>
+                        <p>8d3f68b16f0710f858d8c1d2c699260e6f43161a5510abb0e7ba567bd72c965b</p>
+                        <p>cccda4837024a71fa74ceb420b5e854e</p>
+                        <p>5a048acf6dbded77e5fcc62e0638b0e0</p>
+                        </form>
+                    </div><!-- end icon-wrapper -->
+                </div><!-- end col -->
+
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
 
-	<footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-xs-12">
